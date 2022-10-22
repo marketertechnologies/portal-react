@@ -6,6 +6,7 @@ import { IconArea, IconArrowRight, IconHouse, IconMapPin } from "../../component
 import useRegisterInterest from "../../hooks/useregisterinterest";
 import ShareButton from "../../components/sharebutton";
 import Layout from "../../components/layout";
+import LikeButton from "../../components/likebutton";
 
 const data = {
     title: 'Bakkbygrenda',
@@ -44,7 +45,8 @@ const Project: NextPage = (): JSX.Element => {
                             <div className="flex flex-col gap-4 flex-1">
                                 <h1 className="text-4xl md:text-5xl">{data.title}</h1>
                                 <div className="flex items-center gap-2 uppercase text-sm"><IconMapPin /> {data.city}</div>
-                                <div>
+                                <div className="flex gap-2">
+                                    <LikeButton uuid={'qwer-asdf-fghj-sdfg-sdfg'} />
                                     <ShareButton url={'https://google.com'} title={data.title} />
                                 </div>
                             </div>

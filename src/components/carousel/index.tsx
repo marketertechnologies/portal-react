@@ -6,9 +6,11 @@ import 'swiper/css';
 import { useState } from "react";
 import { Swiper as SwiperProps } from "swiper/types";
 import Link from "next/link";
+import LikeButton from "../likebutton";
 
 const TEST_DATA = [
     {
+        uuid: 'akljf ølkajføaks',
         image: null, //'https://d2ou9824qr5ucu.cloudfront.net/e9cde66f50f962313c280e82c0ae1d65.webp',
         city: 'Aurdal',
         title: 'Lauvtjernveien',
@@ -17,9 +19,11 @@ const TEST_DATA = [
         size_from: 50,
         size_to: 75,
         units_available: 7,
-        slug: 'lauvtjernveien'
+        slug: 'lauvtjernveien',
+        liked: false,
     },
     {
+        uuid: 'asg-sdg--sg-asdga-sdg',
         image: 'https://d2ou9824qr5ucu.cloudfront.net/0e91e8830545743770944a6a755c483a.webp',
         city: 'Oslo',
         title: 'Bakkbygrenda',
@@ -28,9 +32,11 @@ const TEST_DATA = [
         size_from: 85,
         size_to: 120,
         units_available: 15,
-        slug: 'bakkbygrenda'
+        slug: 'bakkbygrenda',
+        liked: true,
     },
     {
+        uuid: 'sdfa-gsgsd-gs-dg-asdg-asdg',
         image: 'https://d2ou9824qr5ucu.cloudfront.net/7ada5b9cc9536d1cc295bb2d537ff6b3.webp',
         city: 'Flekkfjord',
         title: 'Sveåsen',
@@ -39,9 +45,11 @@ const TEST_DATA = [
         size_from: 50,
         size_to: 75,
         units_available: 7,
-        slug: 'sveaasen'
+        slug: 'sveaasen',
+        liked: true
     },
     {
+        uuid: 'asdghadfhad-f-gd-fhsdfhadf',
         image: 'https://d2ou9824qr5ucu.cloudfront.net/7ada5b9cc9536d1cc295bb2d537ff6b3.webp',
         city: 'Flekkfjord',
         title: 'Sveåsen',
@@ -50,11 +58,13 @@ const TEST_DATA = [
         size_from: 50,
         size_to: 75,
         units_available: 7,
-        slug: 'sveaasen'
+        slug: 'sveaasen',
+        liked: false,
     },
 ];
 
 interface ProjectCardProps {
+    uuid?: string;
     image?: string | null,
     city?: string,
     title?: string,
@@ -64,9 +74,11 @@ interface ProjectCardProps {
     size_to?: number,
     units_available?: number,
     slug: string,
+    liked?: boolean,
 }
 
 const ProjectCard = ({
+    uuid,
     image,
     city,
     title,
@@ -76,6 +88,7 @@ const ProjectCard = ({
     size_to,
     units_available,
     slug,
+    liked
 }: ProjectCardProps) => {
 
     return (
@@ -84,6 +97,7 @@ const ProjectCard = ({
                 <a className="flex flex-col outline-inset">
                     <div className="aspect-video relative bg-[#aaa] mb-4">
                         {image && <Image alt="" layout="fill" src={image} />}
+                        <div className="absolute top-2 right-2"><LikeButton liked={liked} uuid={uuid} /></div>
                     </div>
                     <h3>{title}</h3>
                     <div className="uppercase text-sm mt-1">{city}</div>
