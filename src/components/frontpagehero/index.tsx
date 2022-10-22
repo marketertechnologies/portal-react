@@ -1,53 +1,14 @@
 import Image from "next/image";
 import { useState } from "react";
-import { formatPrice } from "../../utils";
+import { formatPrice, TEST_PROJECTS } from "../../utils";
 import { IconArea, IconArrowRightCircle, IconHouse, IconMapPin } from "../icons";
 import LikeButton from "../likebutton";
-
-const TEST_DATA = [
-    {
-        uuid: '707c2a7f-a048-4d9e-8186-53f3e21b88dc',
-        image: 'https://d2ou9824qr5ucu.cloudfront.net/e9cde66f50f962313c280e82c0ae1d65.webp',
-        city: 'Aurdal',
-        title: 'Lauvtjernveien',
-        price_from: 4812510,
-        price_to: 5562510,
-        size_from: 50,
-        size_to: 75,
-        units_available: 7,
-        liked: false,
-    },
-    {
-        uuid: '594456d4-54f7-4f22-a658-4f8ba60df077',
-        image: 'https://d2ou9824qr5ucu.cloudfront.net/0e91e8830545743770944a6a755c483a.webp',
-        city: 'Oslo',
-        title: 'Bakkbygrenda',
-        price_from: 9000000,
-        price_to: 11500000,
-        size_from: 85,
-        size_to: 120,
-        units_available: 15,
-        liked: true,
-    },
-    {
-        uuid: '253aa18a-1267-4723-8b93-edf5037b14cf',
-        image: 'https://d2ou9824qr5ucu.cloudfront.net/7ada5b9cc9536d1cc295bb2d537ff6b3.webp',
-        city: 'Flekkfjord',
-        title: 'Sveåsen',
-        price_from: 4812510,
-        price_to: 5562510,
-        size_from: 50,
-        size_to: 75,
-        units_available: 7,
-        liked: true,
-    },
-];
 
 
 const FrontPageHero = (): JSX.Element | null => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const projects = TEST_DATA;
+    const projects = TEST_PROJECTS;
 
     console.log('render hero');
 
@@ -60,11 +21,11 @@ const FrontPageHero = (): JSX.Element | null => {
 
                 return (
                     <div key={project.uuid} className={`md:px-8 justify-center shrink-0 ${currentIndex === i ? 'flex' : 'hidden'}`}>
-                        <div className="bg-black max-w-[1440px] w-full relative">
+                        <div className="bg-[#111] max-w-[1440px] w-full relative">
                             <div className="pb-[400px] md:pb-[600px] relative">
-                                <Image alt="" layout="fill" className="object-cover absolute top-0 left-0 w-full h-full" src={project.image} />
+                                <Image alt="" layout="fill" className="object-cover absolute top-0 left-0 w-full h-full" src={project.image || ''} />
                             </div>
-                            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.8)]"></div>
+                            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(10,10,10,0.8)]"></div>
                             <div className="absolute top-0 left-0 w-full h-full p-8 md:p-16 text-white flex flex-col justify-end">
                                 <div className="uppercase flex items-center gap-2"><span><IconMapPin /></span>{project.city}</div>
                                 <h2 className="text-4xl md:text-5xl mt-2">{project.title}</h2>
