@@ -1,8 +1,6 @@
-import { getProviders, signIn } from "next-auth/react";
 import { useEffect, useState } from "react";
 import Modal from 'react-modal';
-import { set } from "zod";
-import { IconArrowRight, IconClose, IconFacebookColor, IconGoogleColor, IconLink } from "../components/icons";
+import { IconArrowRight, IconClose, IconLink } from "../components/icons";
 
 const modalStyle = {
     overlay: {
@@ -15,7 +13,7 @@ const modalStyle = {
     },
 };
 
-const useShare = (url: string) => {
+const useShare = () => {
 
     const [modalOpen, setModalOpen] = useState(false);
 

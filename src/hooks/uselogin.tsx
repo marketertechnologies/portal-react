@@ -1,4 +1,5 @@
-import { getProviders, signIn } from "next-auth/react";
+import { BuiltInProviderType } from "next-auth/providers";
+import { ClientSafeProvider, getProviders, LiteralUnion, signIn } from "next-auth/react";
 import { useEffect, useState } from "react";
 import Modal from 'react-modal';
 import { IconArrowRight, IconClose, IconFacebookColor, IconGoogleColor } from "../components/icons";
@@ -17,7 +18,7 @@ const modalStyle = {
 const useLogin = () => {
 
     const [loginOpen, setLoginOpen] = useState(false);
-    const [providers, setProviders] = useState<any>(null);
+    const [providers, setProviders] = useState<Record<LiteralUnion<BuiltInProviderType, string>, ClientSafeProvider> | null>(null);
 
 
     useEffect(() => {

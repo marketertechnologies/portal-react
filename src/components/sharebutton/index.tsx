@@ -11,7 +11,7 @@ const ShareButton = ({
     title,
 }: ShareButtonProps) => {
 
-    const { openShare, ShareModal } = useShare(url);
+    const { openShare, ShareModal } = useShare();
 
     return (
         <>

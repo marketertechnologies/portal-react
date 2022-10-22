@@ -1,4 +1,3 @@
-import { Main } from "next/document";
 import { useState } from "react";
 import { IconArrowLeft, IconArrowRight } from "../icons";
 

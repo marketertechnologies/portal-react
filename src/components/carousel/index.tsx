@@ -83,7 +83,7 @@ const ProjectCard = ({
             <Link href={`/prosjekter/${slug}`} passHref>
                 <a className="flex flex-col outline-inset">
                     <div className="aspect-video relative bg-[#aaa] mb-4">
-                        {image && <Image layout="fill" src={image} />}
+                        {image && <Image alt="" layout="fill" src={image} />}
                     </div>
                     <h3>{title}</h3>
                     <div className="uppercase text-sm mt-1">{city}</div>

@@ -38,7 +38,7 @@ const Project: NextPage = (): JSX.Element => {
                         <div className="flex justify-center lg:px-8">
                             <div className="w-full max-w-[1440px]">
                                 <div className="pb-[56%] lg:pb-[40%] bg-black w-full relative">
-                                    <Image layout="fill" src={data.image} />
+                                    <Image alt="" layout="fill" src={data.image} />
                                 </div>
                             </div>
                         </div>
