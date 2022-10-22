@@ -22,6 +22,9 @@ export default defineNextConfig({
     defaultLocale: "en",
   },
   images: {
-    domains: ["d2ou9824qr5ucu.cloudfront.net"]
+    domains: [
+      "d2ou9824qr5ucu.cloudfront.net",
+      "lh3.googleusercontent.com"
+    ],
   }
 });
