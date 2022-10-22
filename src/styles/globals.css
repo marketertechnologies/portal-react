@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Roobert';
+    src: url('/fonts/Roobert/Roobert-Regular.woff2') format('woff2'),
+        url('/fonts/Roobert/Roobert-Regular.woff') format('woff'),
+        url('/fonts/Roobert/Roobert-Regular.eot') format('eot');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roobert';
+    src: url('/fonts/Roobert/Roobert-Medium.woff2') format('woff2'),
+        url('/fonts/Roobert/Roobert-Medium.woff') format('woff'),
+        url('/fonts/Roobert/Roobert-Medium.eot') format('eot');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Untitled Sans';
+    src: url('/fonts/Untitled Sans/untitled-sans-web-regular.woff2') format('woff2'),
+        url('/fonts/Untitled Sans/untitled-sans-web-regular.woff') format('woff'),
+        url('/fonts/Untitled Sans/untitled-sans-web-regular.eot') format('eot');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Untitled Sans';
+    src: url('/fonts/Untitled Sans/untitled-sans-web-medium.woff2') format('woff2'),
+        url('/fonts/Untitled Sans/untitled-sans-web-medium.woff') format('woff'),
+        url('/fonts/Untitled Sans/untitled-sans-web-medium.eot') format('eot');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Untitled Sans', helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+#__next {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roobert', helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.font-primary {
+    font-family: 'Roobert', helvetica, sans-serif;
+}
+
+h3 {
+    @apply text-2xl;
+}

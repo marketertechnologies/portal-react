@@ -1,0 +1,1 @@
+export const formatPrice = (str: string | number): string => str.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
