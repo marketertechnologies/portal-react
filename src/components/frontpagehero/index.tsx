@@ -23,7 +23,7 @@ const FrontPageHero = (): JSX.Element | null => {
                     <div key={project.uuid} className={`md:px-8 justify-center shrink-0 ${currentIndex === i ? 'flex' : 'hidden'}`}>
                         <div className="bg-[#111] max-w-[1440px] w-full relative">
                             <div className="pb-[400px] md:pb-[600px] relative">
-                                <Image alt="" layout="fill" className="object-cover absolute top-0 left-0 w-full h-full" src={project.image || ''} />
+                                {project.image && <Image alt="" layout="fill" className="object-cover absolute top-0 left-0 w-full h-full" src={project.image} />}
                             </div>
                             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(10,10,10,0.8)]"></div>
                             <div className="absolute top-0 left-0 w-full h-full p-8 md:p-16 text-white flex flex-col justify-end">
