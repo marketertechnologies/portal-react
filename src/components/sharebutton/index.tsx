@@ -15,9 +15,9 @@ const ShareButton = ({
 
     return (
         <>
-            <button onClick={openShare} className="bg-[#f4f4f4] inline-flex gap-2 py-2 px-2 md:px-4 rounded-full hover:bg-[#ddd]">
+            <button onClick={openShare} className="bg-[#f4f4f4] inline-flex gap-2 py-2 px-4 rounded-full hover:bg-[#ddd]">
                 <span><IconShare /></span>
-                <span className="hidden md:inline">Del</span>
+                <span>Del</span>
             </button>
             <ShareModal url={url} title={title} />
         </>
