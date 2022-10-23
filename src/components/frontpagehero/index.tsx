@@ -1,14 +1,16 @@
 import Image from "next/image";
 import { useState } from "react";
-import { formatPrice, TEST_PROJECTS } from "../../utils";
+import { formatPrice } from "../../utils";
+import { ProjectProps } from "../../utils/test";
 import { IconArea, IconArrowRightCircle, IconHouse, IconMapPin } from "../icons";
 import LikeButton from "../likebutton";
 
 
-const FrontPageHero = (): JSX.Element | null => {
+const FrontPageHero = ({ projects }: {
+    projects: ProjectProps[]
+}): JSX.Element | null => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const projects = TEST_PROJECTS;
 
     return (
         <>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { formatPrice, TEST_PROJECTS } from "../../utils";
+import { formatPrice } from "../../utils";
 import { IconArea, IconArrowLeft, IconArrowRight, IconHouse } from "../icons";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -7,20 +7,7 @@ import { useState } from "react";
 import { Swiper as SwiperProps } from "swiper/types";
 import Link from "next/link";
 import LikeButton from "../likebutton";
-
-interface ProjectCardProps {
-    uuid?: string;
-    image?: string | null,
-    city?: string,
-    title?: string,
-    price_from?: number,
-    price_to?: number,
-    size_from?: number,
-    size_to?: number,
-    units_available?: number,
-    slug: string,
-    liked?: boolean,
-}
+import { ProjectProps } from "../../utils/test";
 
 const ProjectCard = ({
     uuid,
@@ -34,7 +21,7 @@ const ProjectCard = ({
     units_available,
     slug,
     liked
-}: ProjectCardProps) => {
+}: ProjectProps) => {
 
     return (
         <div className="flex-1">
@@ -60,17 +47,18 @@ const ProjectCard = ({
 interface CarouselProps {
     title?: string;
     description?: string;
-    projects?: [];
+    projects?: ProjectProps[];
 }
 
 const Carousel = ({
     title,
     description,
-}: CarouselProps): JSX.Element => {
+    projects,
+}: CarouselProps): JSX.Element | null => {
 
     const [swiper, setSwiper] = useState<SwiperProps | null>(null);
 
-    const projects = TEST_PROJECTS;
+    if (!projects || projects.length < 1) return null;
 
     return (
         <div className="flex justify-center px-8 pb-1 overflow-hidden">

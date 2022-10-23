@@ -4,6 +4,7 @@ import Carousel from "../components/carousel";
 import FrontPageHero from "../components/frontpagehero";
 import Layout from "../components/layout";
 import SearchBar from "../components/searchbar";
+import { TEST_PROJECTS } from "../utils/test";
 
 const Home: NextPage = () => {
 
@@ -17,8 +18,8 @@ const Home: NextPage = () => {
       <div className="py-8 pb-24">
         <SearchBar />
         <div className="flex flex-col gap-24">
-          <FrontPageHero />
-          <Carousel title="Siste nytt" description="Sjekk ut de nyeste prosjektene som er lagt ut på Eiendom.no" />
+          <FrontPageHero projects={TEST_PROJECTS} />
+          <Carousel projects={TEST_PROJECTS} title="Siste nytt" description="Sjekk ut de nyeste prosjektene som er lagt ut på Eiendom.no" />
         </div>
       </div>
     </Layout>
