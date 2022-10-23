@@ -40,10 +40,10 @@ const useRegisterInterest = () => {
             isOpen={modalOpen}
             onRequestClose={() => setModalOpen(false)}
             style={modalStyle}
-            className="flex flex-col gap-4 justify-center items-center"
+            className="flex flex-col gap-4 justify-center items-center w-full max-w-[480px]"
             contentLabel="Example Modal"
         >
-            <div className="bg-white max-w-[480px] relative">
+            <div className="bg-white relative w-full">
                 <button className="absolute top-4 right-4 hover:bg-[#ddd] w-8 h-8 flex justify-center items-center rounded-full" onClick={() => setModalOpen(false)}><IconClose /></button>
                 <div className="flex flex-col gap-8 p-8">
                     <h4 className="text-xl md:text-2xl">Meld interesse</h4>

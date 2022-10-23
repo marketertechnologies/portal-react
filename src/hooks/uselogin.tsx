@@ -48,10 +48,10 @@ const useLogin = () => {
             isOpen={loginOpen}
             onRequestClose={() => setLoginOpen(false)}
             style={modalStyle}
-            className="flex flex-col gap-4 justify-center items-center"
+            className="flex flex-col gap-4 justify-center items-center w-full max-w-[480px]"
             contentLabel="Example Modal"
         >
-            <div className="bg-white w-[480px] max-w-[480px]">
+            <div className="bg-white w-full">
                 <div className="bg-[#f4f4f4] p-8 text-lg relative">
                     <button className="absolute top-4 right-4 hover:bg-[#ddd] w-8 h-8 flex justify-center items-center rounded-full" onClick={() => setLoginOpen(false)}><IconClose /></button>
                     <span>Få smarte anbefalinger, oppdateringer og nyheter på nybygg.</span>
