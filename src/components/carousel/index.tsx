@@ -31,7 +31,7 @@ const ProjectCard = ({
                         {image && <Image alt="" layout="fill" src={image} />}
                         <div className="absolute top-4 right-4"><LikeButton liked={liked} uuid={uuid} /></div>
                     </div>
-                    <h3>{title}</h3>
+                    <h3 className="text-xl md:text-2xl">{title}</h3>
                     <div className="uppercase text-sm mt-1">{city}</div>
                     <div className="mt-4">kr {price_from && formatPrice(price_from)}{price_from && price_to ? ' - ' : ''}{price_to && formatPrice(price_to)}</div>
                     <div className="text-md flex flex-row gap-4 mt-2">
