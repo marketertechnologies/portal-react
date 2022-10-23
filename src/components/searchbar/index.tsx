@@ -5,7 +5,7 @@ const SearchBar = () => {
         <div className="px-8 flex justify-center mb-8">
             <div className="max-w-[1440px] w-full gap-4 flex flex-col">
                 {/* <p>Søk etter ønsket bosted</p> */}
-                <input className="font-primary border-b text-3xl md:text-4xl py-4 w-full" placeholder="Søk ditt drømmenybygg" type="search" />
+                <input className="font-primary border-b text-3xl md:text-4xl py-4 w-full" placeholder="Finn din nye bolig" type="search" />
                 <ul className="flex gap-2 flex-wrap">
                     <li>
                         <Link href="/prosjekter?city=oslo" passHref>
