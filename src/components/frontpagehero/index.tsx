@@ -10,8 +10,6 @@ const FrontPageHero = (): JSX.Element | null => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const projects = TEST_PROJECTS;
 
-    console.log('render hero');
-
     return (
         <>
             {projects && projects.map((project, i) => {
