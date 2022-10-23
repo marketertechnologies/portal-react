@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { NextPage } from "next/types";
 import { formatPrice } from "../../utils";
-import { IconArea, IconArrowRight, IconHouse, IconMapPin } from "../../components/icons";
+import { IconArea, IconArrowDown, IconHouse, IconMapPin } from "../../components/icons";
 import useRegisterInterest from "../../hooks/useregisterinterest";
 import ShareButton from "../../components/sharebutton";
 import Layout from "../../components/layout";
@@ -47,7 +47,7 @@ const Project: NextPage = (): JSX.Element | null => {
                     <div className="flex justify-center px-8">
                         <div className="w-full max-w-[1440px] flex flex-col lg:flex-row gap-4">
                             <div className="flex flex-col gap-4 flex-1">
-                                <h1 className="text-4xl md:text-5xl">{project.title}</h1>
+                                <h1 className="text-3xl sm:text-4xl md:text-5xl">{project.title}</h1>
                                 <div className="flex items-center gap-2 uppercase text-sm"><IconMapPin /> {project.city}</div>
                                 <div className="flex gap-2">
                                     <LikeButton uuid={'qwer-asdf-fghj-sdfg-sdfg'} liked={project.liked} />
@@ -55,16 +55,16 @@ const Project: NextPage = (): JSX.Element | null => {
                                 </div>
                             </div>
                             <div className="lg:w-[60%] lg:pt-4">
-                                <div className="text-xl lg:text-2xl max-w-[45rem]">{project.shortDescription}</div>
+                                <div className="text-md md:text-xl lg:text-2xl max-w-[45rem]">{project.shortDescription}</div>
                                 <div className="text-md lg:text-lg flex flex-col sm:flex-row sm:gap-8 mt-8">
                                     <span>kr {project.price_from && formatPrice(project.price_from)}{project.price_from && project.price_to ? ' - ' : ''}{project.price_to && formatPrice(project.price_to)}</span>
                                     <span className="mt-4 sm:mt-0 inline-flex gap-2"><span><IconArea /></span><span>{project.size_from} - {project.size_to} m<sup>2</sup></span></span>
                                     <span className="mt-3 sm:mt-0 inline-flex gap-2"><span><IconHouse /></span><span>{project.units_available}/{project.units_total} Leiligheter</span></span>
                                 </div>
-                                <div className="flex gap-4 mt-8">
+                                <div className="flex flex-col sm:flex-row gap-4 mt-8">
                                     <button onClick={openRegisterInterestForm} className="bg-primary rounded-full text-white px-6 py-4">Meld interesse</button>
                                     <RegisterInterestModal />
-                                    <button className="border rounded-full px-6 py-4 flex gap-2 hover:border-black"><IconArrowRight /> Se alle enheter</button>
+                                    <button className="border rounded-full justify-center px-6 py-4 flex gap-2 hover:border-black"><IconArrowDown /> Se alle enheter</button>
                                 </div>
                             </div>
                         </div>
