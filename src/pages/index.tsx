@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       </Head>
       <div className="py-8 pb-24">
         <SearchBar />
-        <div className="flex flex-col gap-24">
+        <div className="flex flex-col gap-12 md:gap-24">
           <FrontPageHero projects={TEST_PROJECTS} />
           <Carousel projects={TEST_PROJECTS} title="Siste nytt" description="Sjekk ut de nyeste prosjektene som er lagt ut på Eiendom.no" />
         </div>
