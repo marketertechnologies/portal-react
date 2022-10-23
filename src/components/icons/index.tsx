@@ -93,12 +93,18 @@ export const IconArrowRight = (): JSX.Element => (
     </svg>
 );
 
+export const IconArrowDown = (): JSX.Element => (
+    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 5V27" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M7 18L16 27L25 18" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+);
+
 export const IconClose = (): JSX.Element => (
     <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M25 7L7 25" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
         <path d="M25 25L7 7" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
-
 );
 
 export const IconGoogleColor = (): JSX.Element => (
@@ -143,5 +149,67 @@ export const IconHeart = (): JSX.Element => (
 export const IconHeartFilled = (): JSX.Element => (
     <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M22.0029 4.00001C20.8388 3.99801 19.6902 4.2677 18.6486 4.78762C17.607 5.30755 16.7011 6.06336 16.0029 6.99494C15.0574 5.73687 13.7402 4.808 12.2376 4.33976C10.7351 3.87153 9.12341 3.88764 7.63055 4.38582C6.1377 4.884 4.8393 5.83901 3.91909 7.11574C2.99888 8.39246 2.50346 9.92623 2.50293 11.5C2.50293 20.4829 14.983 27.575 15.5143 27.8725C15.6636 27.9561 15.8318 28 16.0029 28C16.174 28 16.3423 27.9561 16.4916 27.8725C18.7869 26.5282 20.9412 24.9563 22.9219 23.1808C27.2887 19.2506 29.5029 15.3206 29.5029 11.5C29.5007 9.51158 28.7098 7.60523 27.3037 6.1992C25.8977 4.79316 23.9914 4.00226 22.0029 4.00001Z" fill="currentColor" />
+    </svg>
+);
+
+export const IconEnvelope = (): JSX.Element => (
+    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 7H28V24C28 24.2652 27.8946 24.5196 27.7071 24.7071C27.5196 24.8946 27.2652 25 27 25H5C4.73478 25 4.48043 24.8946 4.29289 24.7071C4.10536 24.5196 4 24.2652 4 24V7Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M28 7L16 18L4 7" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+);
+
+export const IconChatBubble = (): JSX.Element => (
+    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.6786 22.1248C4.18768 19.6114 3.66554 16.6403 4.21024 13.7692C4.75494 10.8982 6.329 8.32469 8.63685 6.53206C10.9447 4.73944 13.8276 3.85096 16.7442 4.03347C19.6607 4.21598 22.4103 5.45693 24.4767 7.52328C26.5431 9.58963 27.784 12.3393 27.9666 15.2558C28.1491 18.1724 27.2606 21.0553 25.468 23.3631C23.6754 25.671 21.1019 27.2451 18.2309 27.7898C15.3598 28.3345 12.3887 27.8124 9.87532 26.3215L9.87534 26.3213L5.73077 27.5055C5.5593 27.5545 5.37784 27.5567 5.20521 27.512C5.03257 27.4673 4.87504 27.3772 4.74894 27.2511C4.62283 27.125 4.53275 26.9674 4.48802 26.7948C4.44328 26.6222 4.44553 26.4407 4.49452 26.2692L5.67869 22.1247L5.6786 22.1248Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M12 14H20" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M12 18H20" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+);
+
+export const IconSignOut = (): JSX.Element => (
+    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.7515 10.75L27.0001 16L21.7515 21.25" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M13 16H26.9963" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M13 27H6C5.73478 27 5.48043 26.8946 5.29289 26.7071C5.10536 26.5196 5 26.2652 5 26V6C5 5.73478 5.10536 5.48043 5.29289 5.29289C5.48043 5.10536 5.73478 5 6 5H13" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+);
+
+export const IconArrowUp = (): JSX.Element => (
+    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 27V5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M7 14L16 5L25 14" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+);
+
+export const IconShieldFilled = (): JSX.Element => (
+    <svg width="1.5em" height="1.5em" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26.0002 4H6.00018C5.46996 4.00069 4.96165 4.21162 4.58673 4.58655C4.21181 4.96147 4.00087 5.46978 4.00018 6V13.333C4.00018 24.5156 13.4777 28.2236 15.3791 28.8535C15.7819 28.9902 16.2185 28.9902 16.6213 28.8535C18.5217 28.2236 28.0002 24.5166 28.0002 13.333V6C27.9995 5.46978 27.7886 4.96147 27.4136 4.58655C27.0387 4.21162 26.5304 4.00069 26.0002 4ZM22.1906 12.7236L14.8566 19.7236C14.6705 19.901 14.4233 20 14.1662 20C13.9091 20 13.6619 19.901 13.4758 19.7236L9.80975 16.2236C9.71459 16.133 9.63822 16.0245 9.58501 15.9043C9.5318 15.7842 9.50279 15.6547 9.49965 15.5233C9.49651 15.3919 9.51928 15.2612 9.56669 15.1386C9.61409 15.0161 9.68518 14.904 9.7759 14.8089C9.86662 14.7139 9.97519 14.6376 10.0954 14.5845C10.2156 14.5314 10.3451 14.5025 10.4765 14.4995C10.6079 14.4964 10.7386 14.5193 10.8611 14.5669C10.9836 14.6144 11.0956 14.6856 11.1906 14.7764L14.1662 17.6172L20.8097 11.2764C20.9048 11.1856 21.0167 11.1144 21.1392 11.0669C21.2618 11.0193 21.3925 10.9964 21.5239 10.9995C21.6552 11.0025 21.7847 11.0314 21.905 11.0845C22.0252 11.1376 22.1337 11.2139 22.2245 11.3089C22.3152 11.404 22.3863 11.5161 22.4337 11.6386C22.4811 11.7612 22.5039 11.8919 22.5007 12.0233C22.4976 12.1547 22.4686 12.2842 22.4154 12.4043C22.3621 12.5245 22.2858 12.633 22.1906 12.7236H22.1906Z" fill="currentColor" />
+    </svg>
+);
+
+export const IconCaretUp = (): JSX.Element => (
+    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 20L16 10L26 20" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+);
+
+export const IconCaretDown = (): JSX.Element => (
+    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26 12L16 22L6 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+);
+
+export const IconUser = (): JSX.Element => (
+    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 20C20.4183 20 24 16.4183 24 12C24 7.58172 20.4183 4 16 4C11.5817 4 8 7.58172 8 12C8 16.4183 11.5817 20 16 20Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M3.87354 26.9988C5.10299 24.8708 6.8708 23.1037 8.99939 21.8752C11.128 20.6467 13.5424 20 16.0001 20C18.4577 20 20.8721 20.6468 23.0007 21.8754C25.1292 23.1039 26.897 24.871 28.1264 26.9991" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+);
+
+export const IconBell = (): JSX.Element => (
+    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 28H20" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M7.02547 13C7.02381 11.814 7.25691 10.6394 7.71132 9.54392C8.16573 8.44844 8.83248 7.45373 9.67311 6.61713C10.5138 5.78053 11.5117 5.11858 12.6093 4.66945C13.707 4.22031 14.8827 3.99287 16.0686 4.00023C21.0173 4.03702 24.9757 8.1504 24.9757 13.113V14C24.9757 18.4769 25.9124 21.0749 26.7373 22.4948C26.8262 22.6465 26.8735 22.8189 26.8744 22.9948C26.8754 23.1706 26.8299 23.3436 26.7427 23.4962C26.6554 23.6489 26.5295 23.7758 26.3775 23.8643C26.2256 23.9527 26.053 23.9995 25.8771 24H6.12304C5.9472 23.9995 5.77458 23.9527 5.6226 23.8642C5.47062 23.7758 5.34466 23.6488 5.25743 23.4961C5.1702 23.3434 5.12478 23.1704 5.12575 22.9946C5.12672 22.8187 5.17405 22.6463 5.26296 22.4945C6.08837 21.0746 7.02546 18.4767 7.02546 14L7.02547 13Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 );
