@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Modal from 'react-modal';
-import { IconArrowRight, IconClose, IconEnvelope, IconLink } from "../components/icons";
+import { IconChatBubble, IconClose, IconEnvelope, IconLink } from "../components/icons";
 
 const modalStyle = {
     overlay: {
@@ -62,7 +62,7 @@ const useShare = () => {
                     <button className="bg-primary text-white p-4 rounded-full inline-flex justify-center gap-2"><IconLink /> Kopier lenke</button>
                     <div className="flex gap-4">
                         <button className="flex-1 border hover:border-black text-black py-2 px-4 rounded-full inline-flex justify-center gap-2"><IconEnvelope />E-post</button>
-                        <button className="flex-1 border hover:border-black text-black py-2 px-4 rounded-full inline-flex justify-center gap-2">Send SMS <IconArrowRight /></button>
+                        <button className="flex-1 border hover:border-black text-black py-2 px-4 rounded-full inline-flex justify-center gap-2"><IconChatBubble />Send SMS</button>
                     </div>
                 </div>
             </div>
