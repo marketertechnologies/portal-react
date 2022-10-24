@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { ReactNode } from "react";
+import { IconSearch } from "../icons";
 
 const Pill = ({ href, children }: {
     href: string;
@@ -15,7 +16,10 @@ const SearchBar = () => {
         <div className="px-8 flex justify-center mb-8">
             <div className="max-w-[1440px] w-full gap-8 flex flex-col">
                 {/* <p>Søk etter ønsket bosted</p> */}
-                <input className="font-primary border-b text-3xl md:text-4xl py-4 w-full rounded-none" placeholder="Finn din nye bolig" type="search" />
+                <div className="relative flex items-center">
+                    <input className="pl-10 md:pl-12 font-primary border-b text-3xl md:text-4xl py-4 w-full" placeholder="Finn din nye bolig" type="search" />
+                    <span className="pointer-events-none text-[#aaa] absolute left-0 text-xl md:text-2xl"><IconSearch /></span>
+                </div>
                 <ul className="flex gap-2 flex-wrap">
                     <li>
                         <Pill href="/prosjekter?city=oslo">Oslo</Pill>
