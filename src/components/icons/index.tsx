@@ -8,7 +8,7 @@ export const IconLock = (): JSX.Element => (
 );
 
 export const IconSearch = (): JSX.Element => (
-    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="1.5em" height="1.5em" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M14.4998 25C20.2987 25 24.9998 20.299 24.9998 14.5C24.9998 8.70101 20.2987 4 14.4998 4C8.70077 4 3.99976 8.70101 3.99976 14.5C3.99976 20.299 8.70077 25 14.4998 25Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
         <path d="M21.9241 21.925L27.9991 28.0001" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
