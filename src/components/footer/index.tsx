@@ -5,7 +5,7 @@ import { NorwegianLogo } from "../logo";
 const Footer = (): JSX.Element => {
 
     return (
-        <footer className="bg-[#f9f3f3] flex flex-col">
+        <footer className="bg-secondary flex flex-col">
             <div className="flex justify-center px-8 py-12">
                 <div className="w-full max-w-[1440px] flex flex-col md:grid md:grid-cols-4 lg:grid-cols-5 gap-8">
                     <div className="lg:col-span-2">

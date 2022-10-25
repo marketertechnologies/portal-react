@@ -28,9 +28,12 @@ const LoginButton = () => {
                     </button >
                     {menuOpen && (
                         <div className="w-[280px] z-[1] bg-white shadow-md absolute right-0 rounded-md overflow-hidden">
-                            <div className="bg-secondary p-8">
-                                <h4 className="flex gap-1 text-md md:text-lg items-center"><span title="Verifisert konto" className="text-primary text-xs"><IconShieldFilled /></span>{data?.user?.name}</h4>
-                                <div className="text-xs mt-0">{data?.user?.email}</div>
+                            <div className="bg-secondary p-4 flex gap-2 items-center">
+                                {data?.user?.image && <Image src={data.user?.image} width="40" height="40" className="rounded-full" layout="fixed" />}
+                                <div>
+                                    <h4 className="flex gap-1 text-md md:text-lg items-center"><span title="Verifisert konto" className="text-primary text-xs"><IconShieldFilled /></span>{data?.user?.name}</h4>
+                                    <div className="text-xs mt-0">{data?.user?.email}</div>
+                                </div>
                                 {/* <div className="text-xs flex gap-1 mt-1"><span title="Verifisert konto" className="text-primary"><IconShieldFilled /></span> Verifisert konto</div> */}
                             </div>
                             <ul className="flex flex-col gap-0 p-4 py-8 ">
