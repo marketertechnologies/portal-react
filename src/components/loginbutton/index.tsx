@@ -54,8 +54,9 @@ const LoginButton = () => {
                                         <a className="px-4 py-2 w-full rounded-full flex gap-2 items-center hover:bg-secondary"><IconHeart /> Favoritter</a>
                                     </Link>
                                 </li>
+                                <li className="mt-4 px-4"><hr /></li>
                                 <li className="mt-4">
-                                    <button onClick={() => signOut()} className="px-4 py-2 border w-full rounded-full flex gap-2 items-center hover:border-black"><IconSignOut />Logg ut</button>
+                                    <button onClick={() => signOut()} className="px-4 py-2 w-full rounded-full flex gap-2 items-center hover:bg-secondary"><IconSignOut />Logg ut</button>
                                 </li>
                             </ul>
                         </div>
