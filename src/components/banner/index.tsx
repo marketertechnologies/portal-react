@@ -2,11 +2,10 @@ import { ReactNode } from "react";
 import Image from "next/image";
 
 const Banner = ({
-    layout = 'left',
     children
 }: {
-    layout: string;
-    children: ReactNode
+    layout?: string;
+    children?: ReactNode
 }): JSX.Element => {
 
     return (
