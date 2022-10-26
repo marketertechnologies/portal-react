@@ -52,7 +52,7 @@ const useLogin = () => {
             contentLabel="Example Modal"
         >
             <div className="bg-white w-full">
-                <div className="bg-tertiary p-8 text-lg relative">
+                <div className="bg-secondary p-8 text-lg relative">
                     <button className="absolute top-4 right-4 hover:bg-[#ddd] w-8 h-8 flex justify-center items-center rounded-full" onClick={() => setLoginOpen(false)}><IconClose /></button>
                     <span>Få smarte anbefalinger, oppdateringer og nyheter på nybygg.</span>
                 </div>
