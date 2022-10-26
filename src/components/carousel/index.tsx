@@ -7,36 +7,32 @@ import { useState } from "react";
 import { Swiper as SwiperProps } from "swiper/types";
 import Link from "next/link";
 import LikeButton from "../likebutton";
-import { ProjectProps } from "../../utils/test";
+import { Project } from "../../types/project";
 
 const ProjectCard = ({
     uuid,
-    image,
-    city,
-    title,
-    price_from,
-    price_to,
-    size_from,
-    size_to,
-    units_available,
+    images,
+    location,
+    name,
     slug,
-    liked
-}: ProjectProps) => {
+    liked,
+    units_summary,
+}: Project) => {
 
     return (
         <div className="flex-1">
             <Link href={`/prosjekter/${slug}`} passHref>
                 <a className="flex flex-col outline-inset">
                     <div className="aspect-video relative bg-[#111] mb-4">
-                        {image && <Image alt="" layout="fill" src={image} />}
+                        {images && images[0] && <Image alt="" layout="fill" src={images[0].url} />}
                         <div className="absolute top-4 right-4"><LikeButton liked={liked} uuid={uuid} /></div>
                     </div>
-                    <h3 className="text-xl md:text-2xl">{title}</h3>
-                    <div className="uppercase text-sm mt-1">{city}</div>
-                    <div className="mt-4">kr {price_from && formatPrice(price_from)}{price_from && price_to ? ' - ' : ''}{price_to && formatPrice(price_to)}</div>
+                    <h3 className="text-xl md:text-2xl">{name}</h3>
+                    <div className="uppercase text-sm mt-1">{location?.city}</div>
+                    <div className="mt-4">kr {units_summary?.unsold_units?.list_price_from && formatPrice(units_summary?.unsold_units?.list_price_from)}{units_summary?.unsold_units?.list_price_from && units_summary?.unsold_units?.list_price_to ? ' - ' : ''}{units_summary?.unsold_units?.list_price_to && formatPrice(units_summary.unsold_units.list_price_to)}</div>
                     <div className="text-md flex flex-row gap-4 mt-2">
-                        <span className="inline-flex gap-2"><span><IconArea /></span><span>{size_from} - {size_to} m<sup>2</sup></span></span>
-                        <span className="inline-flex gap-2"><span><IconHouse /></span><span>{units_available} Leiligheter</span></span>
+                        <span className="inline-flex gap-2"><span><IconArea /></span><span>{units_summary?.unsold_units?.size_from} - {units_summary?.unsold_units?.size_to} m<sup>2</sup></span></span>
+                        <span className="inline-flex gap-2"><span><IconHouse /></span><span>{units_summary?.unsold_units?.total} Leiligheter</span></span>
                     </div>
                 </a>
             </Link>
@@ -47,7 +43,7 @@ const ProjectCard = ({
 interface CarouselProps {
     title?: string;
     description?: string;
-    projects?: ProjectProps[];
+    projects?: Project[];
 }
 
 const Carousel = ({

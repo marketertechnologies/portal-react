@@ -7,7 +7,7 @@ import useRegisterInterest from "../../hooks/useregisterinterest";
 import ShareButton from "../../components/sharebutton";
 import Layout from "../../components/layout";
 import LikeButton from "../../components/likebutton";
-import { ProjectProps, TEST_PROJECTS } from "../../utils/test";
+import { TEST_PROJECTS } from "../../utils/test-projects";
 import { useEffect, useState } from "react";
 
 const Project: NextPage = (): JSX.Element | null => {

@@ -7,7 +7,7 @@ import FrontPageHero from "../components/frontpagehero";
 import Layout from "../components/layout";
 import SearchBar from "../components/searchbar";
 import useLogin from "../hooks/uselogin";
-import { TEST_PROJECTS } from "../utils/test";
+import { TEST_PROJECTS } from "../utils/test-projects";
 
 const Home: NextPage = () => {
 
