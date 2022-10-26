@@ -89,8 +89,8 @@ const Project: NextPage = (): JSX.Element | null => {
                 </div>
 
                 <div className="w-full flex justify-center px-8" id="info">
-                    <div className="w-full max-w-[1440px] flex flex-col md:flex-row gap-4">
-                        <div className="bg-secondary grid grid-cols-2 p-8 gap-8">
+                    <div className="w-full max-w-[1440px] flex flex-col md:flex-row gap-16">
+                        <div className="bg-secondary grid grid-cols-2 p-8 gap-8 flex-1 h-fit">
                             <div>
                                 <label className="uppercase text-[#aaa] text-sm">Eierform</label>
                                 <div>{project.units_summary?.all_units?.ownership_types}</div>
@@ -112,8 +112,8 @@ const Project: NextPage = (): JSX.Element | null => {
                                 <div>{project.units_summary?.unsold_units?.bedrooms_from} – {project.units_summary?.unsold_units?.bedrooms_to}</div>
                             </div>
                         </div>
-                        <div>
-                            {project.description}
+                        <div className="w-[60%]">
+                            {project.description && <div dangerouslySetInnerHTML={{ __html: project.description }} />}
                         </div>
                     </div>
                 </div>

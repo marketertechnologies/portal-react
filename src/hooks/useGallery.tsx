@@ -41,7 +41,7 @@ const useGallery = () => {
         images: ImageType[],
     }) => {
         const [swiper, setSwiper] = useState<SwiperProps | null>(null);
-        const [currentSlide, setCurrentslide] = useState(1);
+        const [currentSlide, setCurrentslide] = useState(0);
         const [scroll, setScroll] = useState(false);
 
         if (!images || images.length < 1) return null;
@@ -84,12 +84,12 @@ const useGallery = () => {
                     !scroll && swiper && (
                         <>
                             <div className="absolute text-white bottom-6">{currentSlide + 1}/{images.length}</div>
-                            <button className="absolute z-100 bottom-4 md:bottom-auto left-4 p-2 rounded-full bg-secondary" onClick={() => swiper.slidePrev()}>
+                            {images.length > 1 && <button className="absolute z-100 bottom-4 md:bottom-auto left-4 p-2 rounded-full bg-secondary" onClick={() => swiper.slidePrev()}>
                                 <IconArrowLeft />
-                            </button>
-                            <button className="absolute right-4 bottom-4 md:bottom-auto p-2 rounded-full bg-secondary" onClick={() => swiper.slideNext()}>
+                            </button>}
+                            {images.length > 1 && <button className="absolute right-4 bottom-4 md:bottom-auto p-2 rounded-full bg-secondary" onClick={() => swiper.slideNext()}>
                                 <IconArrowRight />
-                            </button>
+                            </button>}
                         </>
                     )
                 }
