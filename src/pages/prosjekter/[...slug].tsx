@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import { NextPage } from "next/types";
 import { formatPrice } from "../../utils";
 import { IconArea, IconArrowDown, IconHouse, IconMapPin } from "../../components/icons";

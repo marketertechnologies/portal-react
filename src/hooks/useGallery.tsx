@@ -4,7 +4,7 @@ import { Image as ImageType } from "../types/project";
 import Modal from 'react-modal';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperProps } from "swiper/types";
-import { IconArrowDown, IconArrowLeft, IconArrowRight, IconArrowSquareDown, IconArrowSquareRight, IconClose } from "../components/icons";
+import { IconArrowLeft, IconArrowRight, IconArrowSquareDown, IconArrowSquareRight, IconClose } from "../components/icons";
 
 const modalStyle = {
     overlay: {
@@ -60,7 +60,7 @@ const useGallery = () => {
                 {scroll ? (
                     <div className="w-full h-full overflow-scroll py-24 px-4 md:px-24">
                         {images.map((image, i) => (
-                            <div className="w-full max-h-[500px] md:max-h-fit relative mb-8">
+                            <div key={i} className="w-full max-h-[500px] md:max-h-fit relative mb-8">
                                 <Image className="object-contain h-full" src={image.url} alt="" width={image.sizes[0]} height={image.sizes[1]} />
                             </div>
                         ))}

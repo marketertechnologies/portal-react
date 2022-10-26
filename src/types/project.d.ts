@@ -175,7 +175,59 @@ interface Parking {
     price: number;
 }
 
-interface PropertyPicker { }
+interface Promotable {
+    uuid: Uuid;
+    type: 'project' | 'stage' | 'building';
+}
+
+interface PropertyPicker {
+    setting: {
+        size: 'small' | 'medium' | 'large';
+        lang: 'en' | 'no';
+        preview_mode: boolean;
+        start_view: string;
+        theme: object;
+        allow_not_available_interaction: boolean;
+        hide_draft_references: boolean;
+        hide_units_from_other_directions: boolean;
+        layout: 'horizontal' | 'vertical';
+        properties: object;
+        show_header: boolean;
+        show_header_view_switch_labels: boolean;
+        sticky_navigation: boolean;
+        height: string;
+        width: string;
+        uuid: Uuid;
+    };
+    scenes: {
+        uuid: Uuid;
+        project_uuid: Uuid;
+        main: boolean;
+        direction:
+        'N' |
+        'NE' |
+        'E' |
+        'SE' |
+        'S' |
+        'SW' |
+        'W' |
+        'NW';
+        promotable: Promotable;
+        asset: Asset;
+        references: {
+            points: {
+                x: number;
+                y: number;
+            }[],
+            target: {
+                id: string;
+                type: 'view' | 'unit' | 'draft';
+            },
+            parent: string;
+            id: string;
+        }[];
+    }[];
+}
 
 export interface Project {
     uuid: Uuid;
