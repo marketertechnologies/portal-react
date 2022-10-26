@@ -213,3 +213,19 @@ export const IconBell = (): JSX.Element => (
         <path d="M7.02547 13C7.02381 11.814 7.25691 10.6394 7.71132 9.54392C8.16573 8.44844 8.83248 7.45373 9.67311 6.61713C10.5138 5.78053 11.5117 5.11858 12.6093 4.66945C13.707 4.22031 14.8827 3.99287 16.0686 4.00023C21.0173 4.03702 24.9757 8.1504 24.9757 13.113V14C24.9757 18.4769 25.9124 21.0749 26.7373 22.4948C26.8262 22.6465 26.8735 22.8189 26.8744 22.9948C26.8754 23.1706 26.8299 23.3436 26.7427 23.4962C26.6554 23.6489 26.5295 23.7758 26.3775 23.8643C26.2256 23.9527 26.053 23.9995 25.8771 24H6.12304C5.9472 23.9995 5.77458 23.9527 5.6226 23.8642C5.47062 23.7758 5.34466 23.6488 5.25743 23.4961C5.1702 23.3434 5.12478 23.1704 5.12575 22.9946C5.12672 22.8187 5.17405 22.6463 5.26296 22.4945C6.08837 21.0746 7.02546 18.4767 7.02546 14L7.02547 13Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 );
+
+export const IconArrowSquareRight = (): JSX.Element => (
+    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M27 26V6C27 5.44772 26.5523 5 26 5L6 5C5.44772 5 5 5.44772 5 6V26C5 26.5523 5.44772 27 6 27H26C26.5523 27 27 26.5523 27 26Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M16.7574 11.7574L21 16L16.7574 20.2426" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M11 16H21" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+);
+
+export const IconArrowSquareDown = (): JSX.Element => (
+    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26 5H6C5.44772 5 5 5.44772 5 6V26C5 26.5523 5.44772 27 6 27H26C26.5523 27 27 26.5523 27 26V6C27 5.44772 26.5523 5 26 5Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M11.7574 16.7574L16 21L20.2426 16.7574" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M16 11V21" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+);
