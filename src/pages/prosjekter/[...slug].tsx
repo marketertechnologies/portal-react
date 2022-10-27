@@ -89,30 +89,46 @@ const Project: NextPage = (): JSX.Element | null => {
 
                 <div className="w-full flex justify-center px-8" id="info">
                     <div className="w-full max-w-[1440px] flex flex-col md:flex-row gap-16">
-                        <div className="bg-secondary grid grid-cols-2 p-8 gap-8 flex-1 h-fit">
-                            <div>
-                                <label className="uppercase text-[#aaa] text-sm">Eierform</label>
-                                <div>{project.units_summary?.all_units?.ownership_types}</div>
-                            </div>
-                            <div>
-                                <label className="uppercase text-[#aaa] text-sm">Boligtype</label>
-                                <div>{project.units_summary?.unsold_units?.unit_types}</div>
-                            </div>
-                            <div>
-                                <label className="uppercase text-[#aaa] text-sm">Enheter</label>
-                                <div>{project.units_summary?.unsold_units?.total}/{project.units_summary?.all_units?.total}</div>
-                            </div>
-                            <div>
-                                <label className="uppercase text-[#aaa] text-sm">Rom</label>
-                                <div>{project.units_summary?.unsold_units?.rooms_from} – {project.units_summary?.unsold_units?.rooms_to}</div>
-                            </div>
-                            <div>
-                                <label className="uppercase text-[#aaa] text-sm">Soverom</label>
-                                <div>{project.units_summary?.unsold_units?.bedrooms_from} – {project.units_summary?.unsold_units?.bedrooms_to}</div>
+                        <div className="bg-secondary p-8 flex-col flex gap-4 flex-1 h-fit">
+                            <h2 className="text-xl md:text-2xl">Prosjektinfo</h2>
+                            <div className="grid grid-cols-2 gap-8">
+                                <div>
+                                    <label className="uppercase text-[#aaa] text-sm">Utbygger</label>
+                                    <div>{project.developer}</div>
+                                </div>
+                                <div>
+                                    <label className="uppercase text-[#aaa] text-sm">Enheter</label>
+                                    <div>{project.units_summary?.unsold_units?.total}/{project.units_summary?.all_units?.total}</div>
+                                </div>
+                                <div>
+                                    <label className="uppercase text-[#aaa] text-sm">Adresse</label>
+                                    <div>{project.location?.address}</div>
+                                </div>
+                                <div>
+                                    <label className="uppercase text-[#aaa] text-sm">Eierform</label>
+                                    <div>{project.units_summary?.all_units?.ownership_types}</div>
+                                </div>
+                                <div>
+                                    <label className="uppercase text-[#aaa] text-sm">Boligtype</label>
+                                    <div>{project.units_summary?.unsold_units?.unit_types}</div>
+                                </div>
+
+                                <div>
+                                    <label className="uppercase text-[#aaa] text-sm">Rom</label>
+                                    <div>{project.units_summary?.unsold_units?.rooms_from} – {project.units_summary?.unsold_units?.rooms_to}</div>
+                                </div>
+                                <div>
+                                    <label className="uppercase text-[#aaa] text-sm">Soverom</label>
+                                    <div>{project.units_summary?.unsold_units?.bedrooms_from} – {project.units_summary?.unsold_units?.bedrooms_to}</div>
+                                </div>
+                                <div>
+                                    <label className="uppercase text-[#aaa] text-sm">Nettside</label>
+                                    <div><a href={project.link}>Se nettside</a></div>
+                                </div>
                             </div>
                         </div>
                         <div className="w-[60%]">
-                            {project.description && <div dangerouslySetInnerHTML={{ __html: project.description }} />}
+                            {project.description && <div className="flex flex-col gap-4" dangerouslySetInnerHTML={{ __html: project.description }} />}
                         </div>
                     </div>
                 </div>
