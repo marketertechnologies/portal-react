@@ -58,6 +58,15 @@ body {
     height: 100%;
 }
 
+input {
+    border-radius: 0;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+}
+
 h1,
 h2,
 h3,
@@ -70,6 +79,14 @@ h6 {
 
 .font-primary {
     font-family: 'Roobert', helvetica, sans-serif;
+}
+
+h1 {
+    @apply text-4xl;
+}
+
+h2 {
+    @apply text-3xl;
 }
 
 h3 {
