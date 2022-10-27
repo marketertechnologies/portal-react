@@ -60,10 +60,11 @@ body {
 
 input {
     border-radius: 0;
+    background: none;
 }
 
 input[type="search"] {
-    -webkit-border-radius: 0px;
+    -webkit-appearance: none;
 }
 
 h1,
