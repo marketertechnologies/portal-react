@@ -13,9 +13,9 @@ export const TEST_PROJECTS: Project[] = [
             },
             {
                 uuid: '707c2a7f-a048-4d9e-8186-53f3e21b88dc',
-                sizes: [1920, 1080],
+                sizes: [720, 1080],
                 media_type: 'mebp',
-                url: 'https://d2ou9824qr5ucu.cloudfront.net/e9cde66f50f962313c280e82c0ae1d65.webp',
+                url: 'https://d2ou9824qr5ucu.cloudfront.net/c9fbcc0ac789738e462f509343f45843.webp',
                 filename: 'test'
             },
             {
@@ -27,9 +27,9 @@ export const TEST_PROJECTS: Project[] = [
             },
             {
                 uuid: '707c2a7f-a048-4d9e-8186-53f3e21b88dc',
-                sizes: [1920, 1080],
+                sizes: [720, 1080],
                 media_type: 'mebp',
-                url: 'https://d2ou9824qr5ucu.cloudfront.net/e9cde66f50f962313c280e82c0ae1d65.webp',
+                url: 'https://d2ou9824qr5ucu.cloudfront.net/c9fbcc0ac789738e462f509343f45843.webp',
                 filename: 'test'
             },
             {

@@ -229,3 +229,12 @@ export const IconArrowSquareDown = (): JSX.Element => (
         <path d="M16 11V21" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 );
+
+export const IconArrowOutSimple = (): JSX.Element => (
+    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 6H26V12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M19 13L26 6" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M12 26H6V20" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M13 19L6 26" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+)

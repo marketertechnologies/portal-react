@@ -5,6 +5,7 @@ import Modal from 'react-modal';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperProps } from "swiper/types";
 import { IconArrowLeft, IconArrowRight, IconArrowSquareDown, IconArrowSquareRight, IconClose } from "../components/icons";
+import { Keyboard } from "swiper";
 
 const modalStyle = {
     overlay: {
@@ -60,22 +61,25 @@ const useGallery = () => {
                 {scroll ? (
                     <div className="w-full h-full overflow-scroll py-24 px-4 md:px-24">
                         {images.map((image, i) => (
-                            <div key={i} className="w-full max-h-[500px] md:max-h-fit relative mb-8">
-                                <Image className="object-contain h-full" src={image.url} alt="" width={image.sizes[0]} height={image.sizes[1]} />
+                            <div key={i} className="w-full aspect-video max-h-[calc(100vh-12rem)] relative mb-8 relative flex justify-center">
+                                <Image className="object-contain w-full h-auto relative" layout="fill" src={image.url} alt="" />
                             </div>
                         ))}
                     </div>
                 ) : (
-                    <div className="w-full h-full py-24 px-4 md:px-24">
+                    <div className="w-full h-full py-24 px-4 md:px-20">
                         <Swiper
-                            className="flex-1 w-full h-full"
+                            modules={[Keyboard]}
+                            loop={true}
+                            className="flex-1 w-full h-full !overflow-visible md:overflow-hidden"
                             spaceBetween={24}
                             onSwiper={swiper => { setSwiper(swiper) }}
-                            onSlideChange={swiper => { setCurrentslide(swiper.activeIndex) }}
+                            onSlideChange={swiper => { setCurrentslide(swiper.activeIndex % images.length) }}
                             preloadImages={true}
                             slidesPerView={1}
+                            keyboard
                         >
-                            {images.map((image, i) => <SwiperSlide key={i} className="h-full w-full"><Image className="object-contain w-full h-full" src={image.url} alt="" layout="fill" /></SwiperSlide>)}
+                            {images.map((image, i) => <SwiperSlide key={i} className="h-full w-full"><Image className="h-full w-full object-contain" src={image.url} alt="" layout="fill" /></SwiperSlide>)}
                         </Swiper>
                     </div >
                 )}
@@ -84,10 +88,10 @@ const useGallery = () => {
                     !scroll && swiper && (
                         <>
                             <div className="absolute text-white bottom-6">{currentSlide + 1}/{images.length}</div>
-                            {images.length > 1 && <button className="absolute z-100 bottom-4 md:bottom-auto left-4 p-2 rounded-full bg-secondary" onClick={() => swiper.slidePrev()}>
+                            {images.length > 1 && <button className="absolute z-[1] bottom-4 md:bottom-auto left-4 p-2 rounded-full bg-secondary" onClick={() => swiper.slidePrev()}>
                                 <IconArrowLeft />
                             </button>}
-                            {images.length > 1 && <button className="absolute right-4 bottom-4 md:bottom-auto p-2 rounded-full bg-secondary" onClick={() => swiper.slideNext()}>
+                            {images.length > 1 && <button className="absolute z-[1] right-4 bottom-4 md:bottom-auto p-2 rounded-full bg-secondary" onClick={() => swiper.slideNext()}>
                                 <IconArrowRight />
                             </button>}
                         </>
