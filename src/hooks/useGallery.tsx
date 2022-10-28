@@ -54,7 +54,7 @@ const useGallery = () => {
                 isOpen={modalOpen}
                 onRequestClose={() => setModalOpen(false)}
                 style={modalStyle}
-                className="flex gap-4 justify-center items-center w-full h-full relative"
+                className="flex gap-4 justify-center items-center w-full h-full relative outline-none"
                 contentLabel="Example Modal"
             >
 
