@@ -13,6 +13,8 @@ import Gallery from "../../components/gallery";
 import { Project } from "../../types/project";
 import ExpandContent from "../../components/expandcontent";
 import Link from "next/link";
+import Location from "../../components/location";
+import Contacts from "../../components/contacts";
 
 const Project: NextPage = (): JSX.Element | null => {
 
@@ -90,10 +92,10 @@ const Project: NextPage = (): JSX.Element | null => {
                 </div>
 
                 <div className="w-full flex justify-center px-8" id="info">
-                    <div className="w-full max-w-[1440px] flex flex-col justify-between md:flex-row md:gap-24">
-                        <div className="bg-secondary p-8 flex-col flex gap-8 flex-1 h-fit max-w-[400px]">
+                    <div className="w-full max-w-[1440px] flex flex-col justify-between md:flex-row gap-16 md:gap-24">
+                        <div className="bg-secondary p-8 flex-col flex gap-8 flex-1 h-fit md:max-w-[400px]">
                             <h2 className="text-xl md:text-2xl">Prosjektinfo</h2>
-                            <ul className="grid grid-cols-2 gap-8">
+                            <ul className="grid grid-cols-2 gap-4">
                                 <li>
                                     <label className="uppercase text-[#555] text-xs">Utbygger</label>
                                     <div>{project.developer}</div>
@@ -101,10 +103,6 @@ const Project: NextPage = (): JSX.Element | null => {
                                 <li>
                                     <label className="uppercase text-[#555] text-xs">Enheter</label>
                                     <div>{project.units_summary?.unsold_units?.total}/{project.units_summary?.all_units?.total}</div>
-                                </li>
-                                <li>
-                                    <label className="uppercase text-[#555] text-xs">Adresse</label>
-                                    <div>{project.location?.address}</div>
                                 </li>
                                 <li>
                                     <label className="uppercase text-[#555] text-xs">Eierform</label>
@@ -131,18 +129,23 @@ const Project: NextPage = (): JSX.Element | null => {
                             </div>}
                         </div>
                         <div className="w-full md:w-[60%] flex flex-col gap-16">
-                            <ExpandContent height="20rem">
-                                {project.description && <div className="flex flex-col gap-4" dangerouslySetInnerHTML={{ __html: project.description }} />}
-                            </ExpandContent>
 
-                            <div className="flex flex-col gap-8">
-                                <h3>Fasiliteter</h3>
-                                <ul className="grid gap-4 grid-cols-3">
-                                    {project.facilities?.map(facility => (
-                                        <li className="border p-4 rounded-full flex gap-2"><IconCheckCircle />{facility.title}</li>
-                                    ))}
-                                </ul>
-                            </div>
+                            {project.description &&
+                                <ExpandContent height="20rem">
+                                    <div className="flex flex-col gap-4" dangerouslySetInnerHTML={{ __html: project.description }} />
+                                </ExpandContent>
+                            }
+
+                            {project.facilities &&
+                                <div className="flex flex-col gap-8">
+                                    <h3>Fasiliteter</h3>
+                                    <ul className="grid gap-4 grid-cols-3">
+                                        {project.facilities?.map((facility, i) => (
+                                            <li key={i} className="border p-4 rounded-full flex gap-2"><IconCheckCircle />{facility.title}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>
@@ -156,27 +159,21 @@ const Project: NextPage = (): JSX.Element | null => {
                     </div>
                 </div>
 
-                <div className="w-full flex justify-center px-8" id="location">
-                    <div className="w-full max-w-[1440px] flex flex-col gap-4">
-                        <h2 className="text-2xl md:text-3xl">Beliggenhet</h2>
-                        <div className="bg-secondary h-[500px] w-full">
-                        </div>
-                    </div>
-                </div>
+                {project.location && <Location {...project.location} />}
 
-                <div className="w-full flex justify-center px-8" id="contact">
-                    <div className="w-full max-w-[1440px] flex flex-col gap-4">
-                        <h2 className="text-2xl md:text-3xl">Kontakt</h2>
-                        <div className="bg-secondary h-[500px] w-full">
-                        </div>
-                    </div>
-                </div>
+                {project.contacts && <Contacts contacts={project.contacts} />}
 
-                <Carousel projects={TEST_PROJECTS.filter(p => p.developer === project.developer)} title={`Flere prosjekter fra ${project.developer}`} description="Sjekk ut prosjekter i nærheten som ligner dette prosjektet" />
+                {TEST_PROJECTS.filter(p => p.developer === project.developer).length &&
+                    <Carousel
+                        projects={TEST_PROJECTS.filter(p => p.developer === project.developer)}
+                        title={`Flere prosjekter fra ${project.developer}`}
+                        description="Sjekk ut prosjekter i nærheten som ligner dette prosjektet"
+                    />
+                }
 
-
-                <Carousel projects={TEST_PROJECTS} title="Relaterte prosjekter" description="Sjekk ut prosjekter i nærheten som ligner dette prosjektet" />
-
+                {TEST_PROJECTS.length &&
+                    <Carousel projects={TEST_PROJECTS} title="Relaterte prosjekter" description="Sjekk ut prosjekter i nærheten som ligner dette prosjektet" />
+                }
 
             </div>
         </Layout >
