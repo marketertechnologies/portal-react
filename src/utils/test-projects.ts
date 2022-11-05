@@ -56,8 +56,8 @@ export const TEST_PROJECTS: Project[] = [
         ],
         headline: 'NYE PRISER- 2 stk. 2-roms selveierleil. under oppføring på hhv. 36 og 50 kvm i Kolbotn sentrum. Selges hver for seg.',
         location: {
-            latitude: 50.23423,
-            longitude: 70.34643,
+            latitude: 58.8165679,
+            longitude: 5.7529977,
             address: 'Lilleveien 94 a',
             city: 'Aurdal',
             zip_code: '0235',
@@ -69,6 +69,57 @@ export const TEST_PROJECTS: Project[] = [
         developer: 'Skanska',
         description: `<h3 class="imported-unit-header">Om prosjektet</h3><p class="imported-unit-paragraph">Boligprosjektet Lauvtjern Terrasse har en egen hjemmeside - Denne finner du som lenke i menyen til høyre og helt i slutten av finn-annonsen.<br>Her finner du alt av relevant informasjon, spesielt under fanen som heter dokumenter. Det er laget en interaktiv boligvelger hvor du enkelt kan finne frem hvor leilighetene ligger i bygget.<br><br>Kort om Lauvtjern Terrasse:<br><br>- Salgstrinn 1 omfatter 12 selveierleiligheter fordelt på to bygg. Hele prosjektet vil bestå av 24 leiligheter fordelt på 4 bygg totalt.<br>- Store terrasser fra 25 til 29 kvm<br>- Flere leiligheter med gode sol- og utsiktsforhold.<br>- Kvalitetskjøkken fra Norema<br>- Parkeringskjeller med 2 plasser per leilighet<br>- Direkte adkomst med plattformheiser til alle leiligheter<br>- Flott fasade med store vindusflater<br>- Gode tilvalgsmuligheter<br>- Faste priser - første mann til mølla<br>- Kr 0,- i forskudd. Innbetaling først ved overtagelse<br>- Overtagelse/innflytting for salgstrinn 1 er 30.09.2023<br>- Bygging er godt i gang!<br><br>Tirsdag den 27. september 2022 kl 17:00 inviteres du til et informasjonsmøte i Stasjonsgata 25, 2. etg, 3300 Hokksund (kontorene til Hobbelstad &amp; Rønning AS, vis a vis Rådhuset) hvor du vil få førstehåndsinformasjon om prosjektet og leilighetene. Av hensyn til enkel servering ønsker vi din påmelding til møtet.<br><br>På informasjonsmøtet vil både utbygger, arkitekt og megler være til stede for å gi utfyllende informasjon om prosjektet. Det vil også være mulig å se på vareprøver innenfor både standard og ulike endringsalternativer for de som ønsker det. Umiddelbart etter møtet, ca. kl. 18.00, avholdes en fellesvisning på byggeplassen/tomten. Det avholdes også en ny byggeplassvisning tirsdag den 11. oktober kl. 17.00.<br><br>Salget av leilighetene starter torsdag 13. oktober 2022 kl. 09.00 ved oppmøte på samme sted som informasjonsmøtet gjennomføres, i Stasjonsgata 25, 2. etg, 3300 Hokksund, i lokalene til Hobbelstad &amp; Rønning AS. Leilighetene selges etter førstemann til mølla prinsippet.</p><h3 class="imported-unit-subheader">Fremdriftsplan og ferdigstillelse</h3><p class="imported-unit-paragraph">Leilighetene planlegges ferdigstilt i følgende perioder:<br>Hus 1 og 3 (første salgstrinn) i løpet av 3. kvartal 2023<br>Dette gjelder som en bindende frist for å ha boligen klar for overtagelse, herunder grunnlag for å kreve dagmulkt. <br><br>Selger kan kreve overtagelse inntil fire måneder før den avtalte fristen til å ha boligen klar til overtagelse. Selger skal skriftlig varsle om dette minimum to måneder før det nye overtagelsestidspunktet. Det eksakte overtagelsestidspunktet skal gis med minst 14 kalenderdagers skriftlig varsel. Det beregnes dagmulkt fra det nye overtagelsestidspunktet. <br><br>Selger skal innen rimelig tid varsle forbruker dersom det oppstår forhold som vil medføre at han blir forsinket med sin utførelse. <br><br>Selger har rett til tilleggsfrist dersom vilkårene som nevnt i Bustadoppføringslova § 11 er oppfylt.<br><br>Påvirkes utførelsen av arbeid under kontrakten av Covid 19 (Koronaviruset) og/eller konsekvenser av krigen i Ukraina eller lignende forhold, som får betydning for fremdriften, må Kjøper være oppmerksom på at det vil være påregnelig at Selger vil ønske å kreve forlengelse av alle frister i kontrakten, herunder frist for ferdigstillelse av arbeidet. Dette gjelder for eksempel ved sykdom, karantene og/eller tiltak/begrensning innført eller anbefalt av offentlig myndighet, samt forsinket / forvansket tilgang på materialer. Dette gjelder også dersom utførelse eller leveranse fra underentreprenør eller annen leverandør påvirkes. Dersom Selger vil kreve fristforlengelse som følge av disse omstendighetene, skal Selger varsle Kjøper uten ugrunnet opphold etter at Selger ble klar over omstendigheten som begrunner kravet. I et slikt tilfelle, oppfordres partene til å søke juridisk bistand. Det er videre på Selgers egen risiko å kreve fristforlengelse eller lignende, og det er ikke gitt at et slikt krav vil stå seg. Det klare utgangspunktet er for øvrig at megler heller ikke har en plikt til å ta stilling til saken. <br><br>Ved besøk på byggeplass før overtagelse skal kunder alltid være i følge med en representant fra Selger. All annen ferdsel på byggeplassen i anleggsperioden er beheftet med høy grad av risiko og er forbudt.</p><h3 class="imported-unit-header">Beliggenhet</h3><p class="imported-unit-paragraph">Harakollen har med sin attraktive beliggenhet og svært gode solforhold, fått en svært sterk posisjon i boligmarkedet. Området er nyetablert og svært barnevennlig med bl.a. kort vei til barnehage og ligger sentralt i forhold til gode serviceforhold i Hokksund sentrum. Lauvtjern Terrasse ligger nydelig til i solhellinga som vender mot Hokksund der du finner både jernbanestasjon for tog og buss, bank, apotek, vinmonopol, offentlige kontorer samt alle handels- og servicetilbud du måtte ha behov for. Ved rundkjøringen opp til Harakollen finner du i tillegg til Hokksund barneskole, en stor Kiwi-butikk samt en ny Padel-hall. Hokksund er en trivelig småby med ca. 8000 innbyggere og er et naturlig kommunesenter i Øvre Eiker kommune. Med tog er det ca. et kvarter til Drammen og ca. tre kvarter til Oslo. Kongsberg når du på under en halv time. Hokksund har også et godt kulturtilbud med en rekke lag og foreninger og aktiviteter for alle aldre. Har du bil, parkerer du enkelt i parkeringskjelleren der du disponerer 2 parkeringsplasser og derfra har du enkel adkomst til leiligheten din via plattformheis. Det legges opp til Elbil-lading på parkeringsplassene og det følger med romslige sportsboder til alle leilighetene.<br><br>Her vil du bo i naturskjønne omgivelser og med gode friluftsmuligheter rett utenfor døra. For de minste er det lekeplass og ballslette i nærmiljøet. Legg gjerne søndagsturen til idylliske Lauvtjern eller Hagatjern.</p><h3 class="imported-unit-header">Tomt</h3><h4 class="imported-unit-subheader">Fellesareal/utomhus/infrastruktur</h4><p class="imported-unit-paragraph">Fellesarealer, herunder felles trappeganger, svalganger, plattformheiser, rømningsveier, fasader, herunder balkonger og terrasser mv. ferdigstilles samtidig med boligene. <br><br>Utomhusarealene ferdigstilles så snart årstiden tillater det.<br><br>På eiendommen vil det bli etablert diverse ledningsnett for vann, avløp, overvann, elektrisitet, data/tv/telefon og ev. andre ledninger. Kjøper er kjent med og aksepterer at tilliggende eiendommer kan få tinglyst nødvendige rettigheter til å vedlikeholde og skifte ut ledninger ved behov. Kjøper plikter å medvirke til dette i årsmøter dersom slike avtaler skal inngås og tinglyses etter at overskjøting har funnet sted.</p><h3 class="imported-unit-header">Parkering og garasje</h3><h4 class="imported-unit-subheader">Garasje/Parkering</h4><p class="imported-unit-paragraph">I de 4 garasjekjellerne finnes til sammen 48 parkeringsplasser organisert som 48 næringsseksjoner (garasjeseksjoner) som skal eies av et selskap som skal drive parkeringsvirksomhet ved å leie parkeringsplassene til Sameiet. Det vil bli inngått en egen avtale mellom Sameiet og selskapet som er hjemmelshaver til garasjeseksjonene om dette. Utkast til avtalen er laget. Leiekostnaden Sameiet får iht. avtalen er en felleskostnad i Sameiet som fordeles kun mellom boligseksjonene. <br><br>Sameiet regulerer og fordeler selv bruken av parkeringsplassene som Sameiet leier, slik beskrevet i utkastet til vedtekter. Før opprettelsen av sameiet har utbygger, på vegne av sameiet, fordelt bruken av plassene mellom seksjoner i sameiet. Ved opprettelsen av Sameiet har styret i Sameiet denne oversikten, og frem til det tidspunktet har utbygger oversikten. Megler kan kontaktes for å se oversikten. For hver parkeringsplass seksjonen benytter har Sameiet bestemt at det svares en særskilt felleskostnad som er lik pr. parkeringsplass. Det medfølger en lukket sportsbod i garasjekjeller, som er seksjonert som tilleggsdel til hver leilighet. Sykkelparkering vil bli etablert utenfor hvert av de 4 leilighetsbyggene.<br><br>Selger tar forbehold om å fordele parkeringsplasser og boder.<br><br>Utbygger vil etablere og bekoste nødvendig installasjon av teknisk infrastruktur for lading av El-biler i Sameiet i garasjekjellerne. <br><br>Infrastrukturen er godkjent av Kople AS som er valgt av utbygger som ekstern leverandør til levering og montering av ladebokser og til å drifte, - og vedlikeholde ladeordningen. Infrastrukturen stilles til Koples disposisjon slik at disse kan montere smart-ladere på de respektive parkeringsplassene som seksjonseierne disponerer etter hvert som kjøperne bestiller og betaler for ladeboks direkte til Kople. Lader m/utstyr bestilles direkte av seksjonseier fra Kople AS. Det er Kople AS som har det videre ansvaret for drift, vedlikehold og support av ladeanlegget. Det vises til egen informasjon fra Kople. Strømforbruk og kostnader for lading av El-bil betales av den enkelte seksjonseier. Ved inngåelse av avtalen er prisen på ladeboksen oppgitt til Kr 22.487,50,- inkl. mva ferdig montert og drift- og vedlikeholdstjenesten koster Kr 73,75,- inkl. mva pr. ladepunkt pr. måned.<br><br>Ladestasjon inngår ikke i leveransen fra selger, men kan bestilles som tilvalg av den enkelte seksjonseier. Det kan være begrensninger på antall ladepunkter og kapasitet som kan leveres. Det tas forbehold om at lading av el-bil kan bli levert som et fleksibelt ladesystem som fordeler tilgjengelig effekt mellom flere brukere. Selger tar forbehold om at lading av el-bil kan bli levert og administrert av annen ekstern leverandør enn nevnt ovenfor og at kjøper betaler leie for bruk til dette selskapet. <br><br>For ytterligere opplysninger vises til kopi av avtalen mellom Hobbelstad &amp; Rønning og Kople AS av 11.10.21 som oversendes styret i Sameiet.</p><h3 class="imported-unit-header">Økonomi</h3><h4 class="imported-unit-subheader">Info Eiendomsskatt</h4><p class="imported-unit-paragraph">Det er ikke eiendomsskatt per 2022, men selger tar forbehold om at kommunen kan innføre dette.</p><h3 class="imported-unit-header">Utleie</h3><h4 class="imported-unit-subheader">Adgang til utleie</h4><p class="imported-unit-paragraph">Boligen kan leies ut i henhold til bestemmelsene i eierseksjonsloven og eventuelt vedtektene. Forretningsfører og styret i sameiet skal informeres om hvem som til enhver tid bebor leiligheten.<br><br>Kortidsutleie av hele boligseksjonen i mer enn 90 døgn er ikke tillatt. Med korttidsutleie menes utleie i inntil 30 døgn. Grensen på 90 døgn kan fravikes i vedtektene og kan i så fall settes til mellom 60 og 120 døgn. Slik beslutning krever et flertall på minst to tredjedeler av de avgitte stemmene på årsmøtet. Merk imidlertid at begrensningen ikke gjelder for sameier hvor alle bruksenhetene brukes som fritidsboliger.<br><br>Boligen har ingen egen utleieenhet.</p><h3 class="imported-unit-header">Finansiering</h3><h3 class="imported-unit-header">Kjøps- og salgsbetingelser</h3><h3 class="imported-unit-header">Eiendommen</h3><h3 class="imported-unit-header">Vilkår og bestemmelser</h3><p class="imported-unit-paragraph">Kjøpet reguleres av Lov om avtale med forbrukar om oppføring av ny bustad m.m. (bustadoppføringslova) 13. juni 1997 nr. 43, i tilfeller hvor selger er profesjonell og kjøper er forbruker. Dette innebærer blant annet at kjøper har krav på garantier iht. bustadoppføringslova § 12.<br>I tilfeller hvor kjøper er profesjonell iht. bustadoppføringslova, dvs. gjør kjøpet som ledd i næringsvirksomhet, kan selger kreve at avtalen reguleres av avhendingslova eller etter bustadoppføringslova hvor §§12, 18 og 52-54 ikke kommer til anvendelse.</p>`,
         liked: false,
+        contacts: [
+            {
+                image: 'https://d2ou9824qr5ucu.cloudfront.net/9828d27ac293f7579784afa4d5eb521e.webp',
+                name: 'Tina Elise Beisland',
+                title: 'Eiendomsmegler/ Siviløkonom',
+                email: 'time@dnbeiendom.no',
+                company: 'DNB Eiendom',
+            },
+            {
+                image: 'https://d2ou9824qr5ucu.cloudfront.net/d9622b33902240da5e9e812a7f354e4f.webp',
+                name: 'Joachim Vågen',
+                title: 'Eiendomsmegler',
+                email: 'joachim@dnbeiendom.no',
+                company: 'DNB Eiendom',
+            },
+            {
+                image: 'https://d2ou9824qr5ucu.cloudfront.net/d9622b33902240da5e9e812a7f354e4f.webp',
+                name: 'Joachim Vågen',
+                title: 'Eiendomsmegler',
+                email: 'joachim@dnbeiendom.no',
+                company: 'DNB Eiendom',
+            },
+            {
+                image: 'https://d2ou9824qr5ucu.cloudfront.net/d9622b33902240da5e9e812a7f354e4f.webp',
+                name: 'Joachim Vågen',
+                title: 'Eiendomsmegler',
+                email: 'joachim@dnbeiendom.no',
+                company: 'DNB Eiendom',
+            },
+            {
+                image: 'https://d2ou9824qr5ucu.cloudfront.net/d9622b33902240da5e9e812a7f354e4f.webp',
+                name: 'Joachim Vågen',
+                title: 'Eiendomsmegler',
+                email: 'joachim@dnbeiendom.no',
+                company: 'DNB Eiendom',
+            },
+            {
+                image: 'https://d2ou9824qr5ucu.cloudfront.net/d9622b33902240da5e9e812a7f354e4f.webp',
+                name: 'Joachim Vågen',
+                title: 'Eiendomsmegler',
+                email: 'joachim@dnbeiendom.no',
+                company: 'DNB Eiendom',
+            },
+            {
+                image: 'https://d2ou9824qr5ucu.cloudfront.net/d9622b33902240da5e9e812a7f354e4f.webp',
+                name: 'Joachim Vågen',
+                title: 'Eiendomsmegler',
+                email: 'joachim@dnbeiendom.no',
+                company: 'DNB Eiendom',
+            }
+        ],
         facilities: [
             { title: 'Utsikt' },
             { title: 'Hage' },
@@ -199,8 +250,6 @@ export const TEST_PROJECTS: Project[] = [
         uuid: '594456d4-54f7-4f22-a658-4f8ba60kjlkjdf077',
         headline: 'NYE PRISER- 2 stk. 2-roms selveierleil. under oppføring på hhv. 36 og 50 kvm i Kolbotn sentrum. Selges hver for seg.',
         location: {
-            latitude: 50.23423,
-            longitude: 70.34643,
             address: 'Lilleveien 94 a',
             city: 'Oslo',
             zip_code: '0235',
