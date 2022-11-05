@@ -8,7 +8,7 @@ const ToggleButton = ({
 }: {
     defaultSelected: boolean;
     children: ReactNode;
-    onChange: (...args: any) => any;
+    onChange: (seleted: boolean, value: boolean | string | number | null) => void;
     value?: string | number;
 }) => {
 
@@ -18,7 +18,7 @@ const ToggleButton = ({
         if (onChange) {
             onChange(selected, value ?? null);
         }
-    }, [selected]);
+    }, [selected, onChange, value]);
 
     return (
         <button
