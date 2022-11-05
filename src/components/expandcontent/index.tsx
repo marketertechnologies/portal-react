@@ -16,10 +16,10 @@ const ExpandContent = ({
                 {children}
                 {!expanded && <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(255,255,255,1)]"></div>}
             </div>
-            <div className="flex justify-center items-center mt-4">
+            <div className="flex justify-center items-center mt-4 sticky bottom-8">
                 <button
                     onClick={() => setExpanded(!expanded)}
-                    className="border px-4 py-2 rounded-full text-black"
+                    className="border px-4 py-2 rounded-full text-black bg-white"
                 >{expanded ? 'Vis mindre' : 'Vis mer'}</button>
             </div>
         </div>
