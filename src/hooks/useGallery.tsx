@@ -47,8 +47,6 @@ const useGallery = () => {
 
         if (!images || images.length < 1) return null;
 
-        console.log(swiper);
-
         return (
             <Modal
                 isOpen={modalOpen}
