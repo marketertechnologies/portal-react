@@ -1,9 +1,9 @@
 
 type Uuid = string;
 
-interface Location {
-    latitude: number;
-    longitude: number;
+export interface Location {
+    latitude?: number;
+    longitude?: number;
     address: string;
     city: string;
     zip_code: string;
@@ -229,6 +229,15 @@ interface PropertyPicker {
     }[];
 }
 
+export interface Contact {
+    uuid?: Uuid;
+    name: string;
+    image?: string;
+    title?: string;
+    email?: string;
+    company?: string;
+}
+
 export interface Project {
     uuid: Uuid;
     name: string;
@@ -249,4 +258,5 @@ export interface Project {
     currency?: string;
     location?: Location;
     units_summary?: UnitsSummary;
+    contacts?: Contact[];
 }
