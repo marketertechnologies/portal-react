@@ -245,3 +245,27 @@ export const IconCheckCircle = (): JSX.Element => (
         <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 );
+
+export const IconPlus = (): JSX.Element => (
+    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 16H27" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M16 5V27" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+);
+
+export const IconMinus = (): JSX.Element => (
+    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 16H27" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+);
+
+export const IconBike = (): JSX.Element => (
+    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26 10C26 9.46957 25.7893 8.96086 25.4142 8.58579C25.0391 8.21071 24.5304 8 24 8H19L26 20" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M26 25C28.7614 25 31 22.7614 31 20C31 17.2386 28.7614 15 26 15C23.2386 15 21 17.2386 21 20C21 22.7614 23.2386 25 26 25Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M6 25C8.76142 25 11 22.7614 11 20C11 17.2386 8.76142 15 6 15C3.23858 15 1 17.2386 1 20C1 22.7614 3.23858 25 6 25Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M6 8H9.5L16.5 20" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M21.2609 12H11.8334L6 20" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+
+)
