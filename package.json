@@ -17,6 +17,7 @@
     "@trpc/next": "10.0.0-proxy-beta.17",
     "@trpc/react": "10.0.0-proxy-beta.17",
     "@trpc/server": "10.0.0-proxy-beta.17",
+    "mapbox-gl": "^2.10.0",
     "next": "12.3.1",
     "next-auth": "^4.12.3",
     "react": "18.2.0",
@@ -27,6 +28,7 @@
     "zod": "^3.18.0"
   },
   "devDependencies": {
+    "@types/mapbox-gl": "^2.7.6",
     "@types/node": "18.0.0",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
