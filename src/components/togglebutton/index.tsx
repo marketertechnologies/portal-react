@@ -1,24 +1,26 @@
 import { ReactNode, useEffect, useState } from "react"
 
+interface ToggleButtonProps {
+    defaultSelected: boolean;
+    children?: ReactNode;
+    returnValue: boolean | number | string | null;
+    onChange: (selected: boolean, returnValue: boolean | number | string | null) => void
+}
+
 const ToggleButton = ({
     defaultSelected,
     children,
-    onChange,
-    value,
-}: {
-    defaultSelected: boolean;
-    children: ReactNode;
-    onChange: (seleted: boolean, value: boolean | string | number | null) => void;
-    value?: string | number;
-}) => {
+    returnValue,
+    onChange
+}: ToggleButtonProps) => {
 
     const [selected, setSeleceted] = useState(defaultSelected);
 
     useEffect(() => {
         if (onChange) {
-            onChange(selected, value ?? null);
+            onChange(selected, returnValue);
         }
-    }, [selected, onChange, value]);
+    }, [selected, onChange, returnValue]);
 
     return (
         <button

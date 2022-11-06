@@ -246,6 +246,7 @@ export interface Project {
     headline?: string;
     description?: string;
     developer?: string;
+    developer_logo?: Image;
     facilities?: Facility[];
     unit_sets?: UnitSet[];
     buildings?: Building[];

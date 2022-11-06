@@ -15,6 +15,7 @@ import ExpandContent from "../../components/expandcontent";
 import Link from "next/link";
 import Location from "../../components/location";
 import Contacts from "../../components/contacts";
+import Image from "next/image";
 
 const Project: NextPage = (): JSX.Element | null => {
 
@@ -136,7 +137,7 @@ const Project: NextPage = (): JSX.Element | null => {
                                 </ExpandContent>
                             }
 
-                            {project.facilities &&
+                            {project.facilities && (
                                 <div className="flex flex-col gap-8">
                                     <h3>Fasiliteter</h3>
                                     <ul className="grid gap-4 grid-cols-3">
@@ -145,7 +146,15 @@ const Project: NextPage = (): JSX.Element | null => {
                                         ))}
                                     </ul>
                                 </div>
-                            }
+                            )}
+
+                            {project.developer_logo && (
+                                <div className="flex flex-col gap-8">
+                                    <h3>Prosjektutbygger</h3>
+                                    {project.developer && (<p className="text-lg">{project.developer}</p>)}
+                                    <Image className="object-contain object-left" src={project.developer_logo.url} width={project.developer_logo.sizes[0]} height={project.developer_logo.sizes[1]} alt="" />
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>

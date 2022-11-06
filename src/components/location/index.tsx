@@ -43,7 +43,7 @@ const Location = ({
 
     const [map, setMap] = useState<mapboxgl.Map | null>(null);
     const [fullscreen, setFullscreen] = useState(false);
-    const [filter, setFilter] = useState<string[]>(['all']);
+    const [filter, setFilter] = useState<(string | number | boolean | null)[]>(['all']);
 
     const zoomIn = () => {
         map && map.zoomIn({ duration: 1000 });
@@ -72,14 +72,14 @@ const Location = ({
         }
     };
 
-    const updateFilter = (selected: boolean, value: string): void => {
+    const updateFilter = (selected: boolean, returnValue: number | boolean | string | null): void => {
 
         let newArray = [];
 
-        if (!selected) { // only splice array when item is found
-            newArray = [...filter].filter(v => v !== value); // 2nd parameter means remove one item only
+        if (!selected === true) {
+            newArray = [...filter].filter(v => v !== returnValue);
         } else {
-            newArray = [...filter, value];
+            newArray = [...filter, returnValue];
         }
 
         setFilter(newArray);
@@ -178,8 +178,8 @@ const Location = ({
                     </div>
                     {latitude && longitude &&
                         <div className="flex gap-2 flex-wrap pointer-events-auto">
-                            {FILTERS.map((f, i) => (
-                                <ToggleButton key={i} defaultSelected={i == 0} value={f.value} onChange={updateFilter}>{f.label}</ToggleButton>
+                            {FILTERS.map((f, i) => f.value && (
+                                <ToggleButton key={i} defaultSelected={i == 0} returnValue={f.value} onChange={updateFilter}>{f.label}</ToggleButton>
                             ))}
                         </div>}
                 </div>
