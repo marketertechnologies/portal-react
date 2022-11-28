@@ -54,7 +54,7 @@ const MainMap = (): JSX.Element => {
                     <h2>Søk!</h2>
                 </div>
                 <div>
-                    {TEST_PROJECTS.map((p, i) => <ProjectCard {...p} layout="horisontal" />)}
+                    {TEST_PROJECTS.map((p, i) => <ProjectCard key={i} {...p} layout="horisontal" />)}
                 </div>
             </div>
             <div className="bg-[#a5dbef] flex-1 p-8 relative">

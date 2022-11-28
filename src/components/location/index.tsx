@@ -90,9 +90,6 @@ const Location = ({
 
         if (longitude && latitude) {
 
-
-
-
             const map = new mapboxgl.Map({
                 container: 'map',
                 style: 'mapbox://styles/mapbox/streets-v10', //'mapbox://styles/mapbox/light-v10'
@@ -110,6 +107,37 @@ const Location = ({
             map.scrollZoom.disable();
 
             map.on('style.load', () => {
+
+                map.addSource('mainBuilding', {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'Feature',
+                        'properties': {},
+                        'geometry': {
+                            'type': 'Polygon',
+                            'coordinates': [
+                                [
+                                    [longitude + 0.01, latitude - 0.01],
+                                    [longitude + 0.01, latitude + 0.01],
+                                    [longitude - 0.01, latitude + 0.01],
+                                    [longitude - 0.01, latitude - 0.01],
+                                ]
+                            ]
+                        }
+                    }
+                });
+
+                // Add a new layer to visualize the polygon.
+                map.addLayer({
+                    'id': 'mainBuilding',
+                    'type': 'fill',
+                    'source': 'maine', // reference the data source
+                    'layout': {},
+                    'paint': {
+                        'fill-color': '#0080ff', // blue color fill
+                        'fill-opacity': 0.5
+                    }
+                });
 
                 //add main marker
                 new mapboxgl.Marker({ color: '#004afe' })
